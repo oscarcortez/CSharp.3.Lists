@@ -9,6 +9,12 @@ namespace ConsoleApp4DataCollections
         static void Main(string[] args)
         {
             var names = new List<string> { "<name>", "Ana", "Felipe" };
+
+            names.ForEach(name => {
+                Console.WriteLine($"con foreach method: {name}");
+            });
+
+
             foreach (var name in names)
             {
                 Console.WriteLine($"Hello {name.ToUpper()}!");
